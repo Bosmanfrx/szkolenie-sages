@@ -1,4 +1,4 @@
-import {Component, OnInit, Output, EventEmitter} from '@angular/core';
+import {Component, OnInit, Output, EventEmitter, AfterViewInit} from '@angular/core';
 
 @Component({
   selector: 'stx-playlists-list',
@@ -14,7 +14,12 @@ import {Component, OnInit, Output, EventEmitter} from '@angular/core';
   styles: [`
 `]
 })
-export class PlaylistsListComponent implements OnInit {
+export class PlaylistsListComponent implements OnInit, AfterViewInit {
+
+
+  ngAfterViewInit(): void {
+
+  }
 
   playlists = [
     {
