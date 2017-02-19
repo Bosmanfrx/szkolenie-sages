@@ -17,9 +17,10 @@
       "polyfills": "polyfills.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
-      "prefix": "app",
+      "prefix": "stx",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -51,6 +52,11 @@
   },
   "defaults": {
     "styleExt": "css",
-    "component": {}
+    "component": {
+      "flat": true,
+      "inlineStyle": true,
+      "inlineTemplate": true,
+      "spec": false
+    }
   }
 }
