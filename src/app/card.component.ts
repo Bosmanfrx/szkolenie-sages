@@ -10,6 +10,9 @@ import {Component, OnInit, Input} from '@angular/core';
     </h4>
     
       <ng-content></ng-content>
+      <div class="card-footer">
+      <ng-content select="footer"></ng-content>
+</div>
 </div>
     </div>
   `,

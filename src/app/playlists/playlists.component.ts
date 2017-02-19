@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'stx-playlists',
   template: `
 <div class="row">
-<div class="col">        <stx-card title="Playlists"><stx-playlists-list (selected)="sendToDetails($event)"></stx-playlists-list></stx-card>
+<div class="col">        <stx-card title="Playlists"><stx-playlists-list (selected)="sendToDetails($event)"></stx-playlists-list><footer>duuupa</footer></stx-card>
 </div>
 <div class="col"><stx-card title="Playlists"><stx-playlists-detail [playlist]="detailsPlaylist"></stx-playlists-detail></stx-card></div>
 </div>
